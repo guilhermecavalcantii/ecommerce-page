@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitGaming.GG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">GitGaming.GG</div>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li> <!-- Nova opção "Início" -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Loja</a>
+                        <div class="dropdown-content">
+                            <a href="#">Destaques da Semana</a>
+                            <a href="#">Promoções Especiais</a>
+                            <a href="#">Jogos Gratuitos</a>
+                            <a href="#">Demos</a>
+                            <a href="#">Lista de Desejos</a>
+                            <a href="#">Jogos a Menos de 20 Reais</a>
+                            <a href="#">Lançamentos</a>
+                            <a href="#">Multiplayer</a>
+                            <a href="#">Arcade</a>
+                            <a href="#">Gêneros</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Biblioteca</a>
+                        <div class="dropdown-content">
+                            <a href="#">Minha Biblioteca</a>
+                            <a href="#">Visão Geral</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Comunidade</a>
+                        <div class="dropdown-content">
+                            <a href="#">Mercado da Comunidade</a>
+                            <a href="#">Oficina de Criatividade</a>
+                            <a href="#">Inventário</a>
+                            <a href="#">Amigos</a>
+                            <a href="#">Mural</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Carteira</a> <!-- Nova opção "Carteira" -->
+                        <div class="dropdown-content">
+                            <a href="#">Carrinho</a>
+                            <a href="#">Histórico de compras</a>
+                            <a href="#">Depositar fundos</a>
+                            <a href="#">Histórico de transações</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar jogos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Destaque da Semana</h1>
+                <p>Jogo em promoção especial!</p>
+                <button>Ver Detalhes</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Jogos em Destaque</h2>
+            <div class="game-card">
+                <img src="jogo1.jpg" alt="Jogo 1">
+                <h3>Jogo 1</h3>
+                <p>R$ 99,90</p>
+            </div>
+            <div class="game-card">
+                <img src="jogo2.jpg" alt="Jogo 2">
+                <h3>Jogo 2</h3>
+                <p>R$ 149,90</p>
+            </div>
+            <div class="game-card">
+                <img src="jogo3.jpg" alt="Jogo 3">
+                <h3>Jogo 3</h3>
+                <p>R$ 199,90</p>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-main">
+                <img id="main-image" src="jogo1.jpg" alt="Jogo em destaque">
+                <div class="game-info">
+                    <h2 id="game-title">Jogo 1</h2>
+                    <p id="game-description">Descrição do Jogo 1.</p>
+                    <p id="game-price">R$ 349,99</p>
+                    <button id="buy-button">Compre agora</button>
+                </div>
+            </div>
+            <div class="carousel-thumbnails">
+                <div class="thumbnail" data-index="0">
+                    <img src="jogo1-thumbnail.jpg" alt="Jogo 1">
+                    <div class="timer"></div>
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="jogo2-thumbnail.jpg" alt="Jogo 2">
+                    <div class="timer"></div>
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="jogo3-thumbnail.jpg" alt="Jogo 3">
+                    <div class="timer"></div>
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="jogo4-thumbnail.jpg" alt="Jogo 4">
+                    <div class="timer"></div>
+                </div>
+                <div class="thumbnail" data-index="4">
+                    <img src="jogo5-thumbnail.jpg" alt="Jogo 5">
+                    <div class="timer"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>© 2024 GitGaming.GG ltda. Todos os direitos reservados.</p>
+        </footer>
+
+
+        <script src="scripts.js"></script>
+    </body>
+
+</html>

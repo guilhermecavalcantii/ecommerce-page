@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121; /* Fundo principal */
+    color: #EEEEEE; /* Cor do texto */
+}
+
+header {
+    background-color: #0D7377; /* Fundo do cabeçalho */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #32E0C4; /* Cor do logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #EEEEEE; /* Cor dos links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #32E0C4; /* Cor ao passar o mouse nos links */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #0D7377; /* Fundo da caixa de pesquisa */
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid #32E0C4; /* Borda mais destacada */
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    color: #EEEEEE; /* Cor do texto na pesquisa */
+    padding: 5px;
+    width: 200px;
+    border-radius: 4px; /* Arredondar os cantos do campo de entrada */
+}
+
+.search-box input::placeholder {
+    color: #BBBBBB; /* Cor do placeholder para contraste */
+}
+
+.search-box button {
+    background: #32E0C4; /* Cor de fundo do botão */
+    border: none;
+    color: #212121; /* Cor do ícone de pesquisa */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px; /* Arredondar os cantos do botão */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.search-box button:hover {
+    background-color: #0D7377; /* Cor de fundo ao passar o mouse no botão */
+}
+
+/* Estilos para os dropdowns */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212121; /* Fundo dos dropdowns */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #EEEEEE; /* Cor dos links no dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0D7377; /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.hero {
+    background-image: url('destaque.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #32E0C4; /* Cor do título na seção hero */
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #EEEEEE; /* Cor do texto na seção hero */
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #212121; /* Cor do texto do botão */
+    background-color: #32E0C4; /* Cor de fundo do botão */
+    border: none;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #0D7377; /* Cor do botão ao passar o mouse */
+}
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #32E0C4; /* Cor do título na galeria */
+}
+
+.game-card {
+    display: inline-block;
+    background-color: #0D7377; /* Fundo das cards de jogos */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #32E0C4; /* Cor do título do jogo */
+}
+
+.game-card p {
+    font-size: 18px;
+    color: #EEEEEE; /* Cor do preço do jogo */
+}
+
+footer {
+    background-color: #0D7377; /* Fundo do rodapé */
+    padding: 20px;
+    text-align: center;
+    color: #EEEEEE; /* Cor do texto no rodapé */
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0D7377; /* Fundo do carrossel */
+}
+
+.carousel h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #32E0C4; /* Cor do título do carrossel */
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin: 0 10px;
+    background-color: #212121; /* Fundo dos itens do carrossel */
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #32E0C4; /* Cor do título do item do carrossel */
+}
+
+.carousel-item p {
+    font-size: 18px;
+    color: #EEEEEE; /* Cor do preço do item do carrossel */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background-color: #32E0C4; /* Cor do botão do carrossel */
+    border: none;
+    color: #212121; /* Cor do ícone do botão do carrossel */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #0D7377; /* Cor de fundo do botão ao passar o mouse */
+}
